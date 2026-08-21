@@ -36,19 +36,118 @@ const geistMono =
   });
 
 /* =========================================================
-   METADATA WEBSITE
+   METADATA WEBSITE & SEO
 ========================================================= */
 
-export const metadata:
-  Metadata = {
-  title:
-    'Sistem Informasi Desa Keji',
+export const metadata: Metadata = {
+  metadataBase: new URL('https://desakeji-nyawiji.com'),
+
+  title: {
+    default:
+      'Website Resmi Pemerintah Desa Keji | Kecamatan Ungaran Barat',
+    template:
+      '%s | Desa Keji - Ungaran Barat',
+  },
 
   description:
-    'Sistem Informasi Desa Keji sebagai pusat informasi, layanan publik, pemerintahan, potensi desa, desa wisata, dan informasi masyarakat Desa Keji, Kecamatan Ungaran Barat, Kabupaten Semarang.',
+    'Website Resmi Pemerintah Desa Keji, Kecamatan Ungaran Barat, Kabupaten Semarang, Jawa Tengah. Menyajikan informasi pemerintahan, pelayanan publik, data desa, PPID, desa wisata, potensi, dan informasi masyarakat Desa Keji.',
 
   applicationName:
-    'Sistem Informasi Desa Keji',
+    'Website Resmi Pemerintah Desa Keji',
+
+  authors: [
+    {
+      name:
+        'Pemerintah Desa Keji',
+    },
+  ],
+
+  creator:
+    'Pemerintah Desa Keji',
+
+  publisher:
+    'Pemerintah Desa Keji',
+
+  alternates: {
+    canonical:
+      'https://desakeji-nyawiji.com',
+  },
+
+  robots: {
+    index:
+      true,
+
+    follow:
+      true,
+
+    googleBot: {
+      index:
+        true,
+
+      follow:
+        true,
+
+      'max-image-preview':
+        'large',
+
+      'max-snippet':
+        -1,
+
+      'max-video-preview':
+        -1,
+    },
+  },
+
+  openGraph: {
+    type:
+      'website',
+
+    locale:
+      'id_ID',
+
+    url:
+      'https://desakeji-nyawiji.com',
+
+    siteName:
+      'Website Resmi Pemerintah Desa Keji',
+
+    title:
+      'Website Resmi Pemerintah Desa Keji | Kecamatan Ungaran Barat',
+
+    description:
+      'Informasi resmi Pemerintah Desa Keji, Kecamatan Ungaran Barat, Kabupaten Semarang meliputi pemerintahan, pelayanan publik, data desa, PPID, desa wisata, potensi, dan informasi masyarakat.',
+
+    images: [
+      {
+        url:
+          '/logodesakeji.png',
+
+        width:
+          1200,
+
+        height:
+          630,
+
+        alt:
+          'Logo Pemerintah Desa Keji',
+      },
+    ],
+  },
+
+  twitter: {
+    card:
+      'summary_large_image',
+
+    title:
+      'Website Resmi Pemerintah Desa Keji | Kecamatan Ungaran Barat',
+
+    description:
+      'Website resmi Pemerintah Desa Keji, Kecamatan Ungaran Barat, Kabupaten Semarang.',
+
+    images: [
+      '/logodesakeji.png',
+    ],
+  },
 
   icons: {
     icon: [
